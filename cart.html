@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АТБ — Кошик</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">АТБ <span>-MARKET</span></div>
+        <a href="index.html" class="main-btn">На головну</a>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="index.html#products">Товари</a>
+        <a href="cart.html">Кошик</a>
+    </nav>
+
+    <section class="cart-section">
+
+        <h1>🛒 Твій кошик</h1>
+
+        <div id="cart-items"></div>
+
+        <hr>
+
+        <p>Кількість товарів:
+            <span id="cart-count">0</span>
+        </p>
+
+        <h2>До сплати:
+            <span id="cart-total">0</span> грн
+        </h2>
+
+        <button onclick="checkout()">
+            Оформити замовлення
+        </button>
+
+        <button class="clear-btn" onclick="clearCart()">
+            Очистити кошик
+        </button>
+
+        <br><br>
+
+        <a href="index.html#products" class="main-btn">
+            Продовжити покупки
+        </a>
+
+    </section>
+
+    <footer>
+        <p>© 2026 АТБ-MARKET</p>
+        <p>Дякуємо, що обираєте нас!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

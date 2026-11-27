@@ -1,0 +1,280 @@
+
+
+body {
+    background-color: #000000;
+    color: #ff1e1e;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #111111;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 2px solid red;
+}
+
+header img {
+    width: 150px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: white;
+}
+
+.cart-btn {
+    background-color: #330000;
+    color: red;
+    border: 2px solid red;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background-color: red;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Навігація */
+
+nav {
+    background-color: #141414;
+    padding: 18px;
+    border-bottom: 1px solid #440000;
+}
+
+nav a {
+    color: #ff1e1e;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+
+.banner {
+    background: linear-gradient(135deg, #330000, #111111);
+    padding: 45px 20px;
+    margin: 30px auto;
+    border: 1px solid red;
+    max-width: 1100px;
+    width: 90%;
+    border-radius: 15px;
+}
+
+.banner h1 {
+    font-size: 38px;
+}
+
+.banner p {
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+
+button, .main-btn {
+    display: inline-block;
+    background-color: #ff1e1e;
+    color: black;
+    border: none;
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+button:hover, .main-btn:hover {
+    background-color: #cc0000;
+    color: white;
+    transform: scale(1.04);
+}
+
+/* Пошук */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#search {
+    background-color: #111111;
+    color: white;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    outline: none;
+    width: 400px;
+    max-width: 100%;
+}
+
+#search:focus {
+    box-shadow: 0 0 8px red;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.product {
+    background-color: #111111;
+    border: 1px solid red;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 5px 5px 0 0 #770000;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 0 15px red;
+}
+
+.product img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    color: #cccccc;
+}
+
+.product .price {
+    color: #ff1e1e;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.product button {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
+.cart-section {
+    background-color: #111111;
+    border: 1px solid red;
+    border-radius: 15px;
+    max-width: 850px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.cart-item {
+    background-color: #1b1b1b;
+    border: 1px solid #660000;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cart-item h3 {
+    color: white;
+}
+
+.cart-item button {
+    padding: 8px 14px;
+}
+
+.cart-item span {
+    color: white;
+    padding: 10px;
+}
+
+.clear-btn {
+    background-color: #330000;
+    color: red;
+    border: 1px solid red;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #660000;
+    margin: 25px 0;
+}
+
+
+
+#notification {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    background-color: #16803b;
+    color: white;
+    padding: 18px 25px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+
+.up-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 0;
+}
+
+
+
+footer {
+    background-color: #111111;
+    border-top: 1px solid red;
+    padding: 25px;
+    margin-top: 40px;
+}
+

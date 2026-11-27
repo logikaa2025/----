@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АТБ — Інтернет-магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">АТБ <span>-MARKET</span></div>
+        <img src="https://kupony.com.ua/wp-content/uploads/2024/04/ATB_market.gif" alt="АТБ">
+        <p>Продукти для кожного!</p>
+
+        <a href="cart.html" class="cart-btn">
+            🛒 Кошик: <span id="count">0</span><br>
+            Сума: <span id="total">0</span> грн
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="#products">Товари</a>
+        <a href="cart.html">Кошик</a>
+    </nav>
+
+    <section class="banner">
+        <h1>Вітаємо в АТБ!</h1>
+        <p>Смачні продукти за доступними цінами</p>
+        <a href="#products" class="main-btn">До покупок</a>
+    </section>
+
+    <div class="filters">
+        <input type="text" id="search"
+               placeholder="🔍 Пошук товарів..."
+               oninput="searchProducts()">
+    </div>
+
+    <h2>Наші товари</h2>
+
+    <main id="products">
+
+        <div class="product" data-name="Пельмені">
+            <img src="foto/пельмені.jpg">
+            <h3>Пельмені</h3>
+            <p>Смакують з оцтом</p>
+            <p class="price">120 грн</p>
+            <button onclick="addToCart('Пельмені', 120)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Банани">
+            <img src="foto/banana.webp">
+            <h3>Банани</h3>
+            <p>Свіжі та солодкі банани</p>
+            <p class="price">39 грн</p>
+            <button onclick="addToCart('Банани', 39)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Мівіна">
+            <img src="foto/мівіна.jpg">
+            <h3>Мівіна</h3>
+            <p>Швидке та смачне приготування</p>
+            <p class="price">15 грн</p>
+            <button onclick="addToCart('Мівіна', 15)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Мандарини">
+            <img src="foto/мандарин.jpg">
+            <h3>Мандарини</h3>
+            <p>Солодкі та ароматні мандарини</p>
+            <p class="price">45 грн</p>
+            <button onclick="addToCart('Мандарини', 45)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Напої">
+            <img src="foto/напої.jpg">
+            <h3>Напої різні</h3>
+            <p>Дуже смачні</p>
+            <p class="price">65 грн</p>
+            <button onclick="addToCart('Напої', 65)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Молочні продукти">
+            <img src="foto/молочні.jpg">
+            <h3>Молочні продукти</h3>
+            <p>Підходять для пластівців</p>
+            <p class="price">55 грн</p>
+            <button onclick="addToCart('Молочні продукти', 55)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Цукерки">
+            <img src="foto/цукерки.jpg">
+            <h3>Цукерки</h3>
+            <p>Смачні та недорогі</p>
+            <p class="price">100 грн</p>
+            <button onclick="addToCart('Цукерки', 100)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Моджо всі смаки">
+            <img src="foto/моджо.jpg">
+            <h3>Моджо всі смаки</h3>
+            <p>Можна замовити кожен смак</p>
+            <p class="price">22 грн</p>
+            <button onclick="addToCart('Моджо всі смаки', 22)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Моджо">
+            <img src="foto/моджоВел.jpg">
+            <h3>Моджо</h3>
+            <p>Недорого та смачно</p>
+            <p class="price">28,90 грн</p>
+            <button onclick="addToCart('Моджо', 28.90)">Купити</button>
+        </div>
+
+        <div class="product" data-name="Чипси">
+            <img src="foto/leys.png">
+            <h3>Чипси</h3>
+            <p>Смакують з Моджо</p>
+            <p class="price">60 грн</p>
+            <button onclick="addToCart('Чипси', 60)">Купити</button>
+        </div>
+
+    </main>
+
+    <p id="no-results" hidden>Товарів не знайдено!</p>
+
+    <section class="banner">
+        <h2>Закінчили покупки?</h2>
+        <a href="cart.html" class="main-btn">Перейти до кошика 🛒</a>
+    </section>
+
+    <div id="notification"></div>
+
+    <button class="up-btn" onclick="goUp()">↑</button>
+
+    <footer>
+        <p>© 2026 АТБ-MARKET</p>
+        <p>Дякуємо, що обираєте нас!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
